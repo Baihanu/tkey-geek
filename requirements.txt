@@ -1,0 +1,8 @@
+# Django - Framework para codar e rodar o projeto
+asgiref==3.3.1
+django==3.1.6
+pytz==2021.1
+sqlparse==0.4.1
+
+# Heroku - Deploy da aplicação
+gunicorn==20.0.4
