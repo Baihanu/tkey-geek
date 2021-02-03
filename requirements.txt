@@ -25,3 +25,7 @@ jmespath==0.10.0
 python-dateutil==2.8.1
 s3transfer==0.3.4
 six==1.15.0
+
+# Collectfast
+Collectfast==2.2.0
+typing-extensions==3.7.4.3
