@@ -6,3 +6,6 @@ sqlparse==0.4.1
 
 # Heroku - Deploy da aplicação
 gunicorn==20.0.4
+
+# Decouple
+python-decouple==3.4
