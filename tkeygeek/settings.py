@@ -13,6 +13,9 @@ import os
 from functools import partial
 from pathlib import Path
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
 from decouple import config, Csv
@@ -76,6 +79,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tkeygeek.wsgi.application'
 
+# Configuração Django Debug Toolbar
+
+INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware',)
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -134,9 +145,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 COLLECTFAST_ENABLE = False
-COLLECTFAST_STRATEGY = 'collectfast.strategies.boto3.Boto3Strategy'
 
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID', default=False)
 
 # Configuração S3
 
@@ -150,6 +160,7 @@ if AWS_ACCESS_KEY_ID:
     AWS_S3_CUSTOM_DOMAIN = None
 
     COLLECTFAST_ENABLE = True
+    COLLECTFAST_STRATEGY = 'collectfast.strategies.boto3.Boto3Strategy'
 
     AWS_DEFAULT_ACL = 'private'
 
@@ -169,3 +180,11 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
+
+SENTRY_DSN = config('SENTRY_DSN', default=None)
+
+if SENTRY_DSN:
+
+    sentry_sdk.init(dsn=SENTRY_DSN, integrations=[DjangoIntegration()],
+                    traces_sample_rate=1.0,
+                    send_default_pii=True)

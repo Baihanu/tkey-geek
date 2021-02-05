@@ -29,3 +29,9 @@ six==1.15.0
 # Collectfast
 Collectfast==2.2.0
 typing-extensions==3.7.4.3
+
+# Django Debug Toolbar
+django-debug-toolbar==3.2
+
+# Sentry
+sentry-sdk==0.19.5
