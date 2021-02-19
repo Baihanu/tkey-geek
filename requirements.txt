@@ -34,4 +34,4 @@ typing-extensions==3.7.4.3
 django-debug-toolbar==3.2
 
 # Sentry
-sentry-sdk==0.19.5
+sentry-sdk==0.20.3
