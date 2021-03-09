@@ -18,7 +18,7 @@ pytest-django==4.1.0
 toml==0.10.2
 
 # Pytest Cov - Cobertura de Testes do Pytest
-coverage==5.4
+coverage==5.5
 pytest-cov==2.11.1
 
 # Codecov - Gerador de relatórios para cobertura de testes
