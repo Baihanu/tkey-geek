@@ -18,33 +18,37 @@
 
 
   </head>
+
   <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-	  <div class="container-fluid">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink NavBackground">
+	  <div class="container">
 	    <button
-		  class="navbar-toggler"
+		  class="navbar-toggler navbar-toggler-left collapsed"
 		  type="button"
-		  data-mdb-toggle="collapse"
-		  data-mdb-target="#navbarExample01"
-		  aria-controls="navbarExample01"
+		  data-toggle="collapse"
+		  data-target="#navbarResponsive"
+		  aria-controls="navbarResponsive"
 		  aria-expanded="false"
 		  aria-label="Toggle navigation"
-		>
+		>Menu
 		  <i class="fas fa-bars"></i>
 		</button>
-		  <div class="collapse navbar-collapse" id="navbarExample01">
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			  <li class="nav-item active">
 				<a class="nav-link" aria-current="page" href="{% url 'base:home' %}">Tkey Magnetic</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Features</a>
+				<a class="nav-link" href="#Features">Features</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Pricing</a>
+				<a class="nav-link" href="#Pricing">Pricing</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">About</a>
+				<a class="nav-link" href="#Install">Install</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#Contact">Contact</a>
 			  </li>
 			</ul>
 		  </div>
@@ -69,185 +73,141 @@
 	  </div>
 	</div>
 
-	<div class="p-5 text-center container">
-	  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-	    <div class="d-flex justify-content-center align-items-center h-100">
-	      <div class="text-dark">
-			<h1 class="spacetxt">Conheça nossos modelos</h1>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
 	<div class="container">
 	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-6 imgback"
-		style="
-		  background-image: url({% static 'img/T100B.jpg' %});
-		  margin-top: 58px;
-		  "
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-dark">
-				<h1 class="spacetxt">T100-B</h1>
-			  </div>
-			</div>
+	    <div id="Features">
+			<hr>
+		  <div class="container">
+		  <div class="section-heading text-center">
+			<hr>
+		    <h2>Peças de ultima geração!</h2>
+		    <p class="text-muted">Alta tecnologia usada para lhe trazer a melhor experiência!</p>
 		  </div>
-		</div>
-		<div class="p-5 text-center bg-image col-md-6 imgback"
-		style="
-			background-image: url({% static 'img/T100G.jpg' %});
-			margin-top: 58px;
-			"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-		    <div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-dark">
-		        <h1 class="spacetxt">T100-G</h1>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-	    <div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T1.png' %});"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-dark">
-				<h1 class="spacetxt">Silicone de Alta Qualidade</h1>
-				<h4>Não danifica o aparelho</h4>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T2.png' %});"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-light">
-				<h1 class="spacetxt">Seis imãs de Neodímio</h1>
-				<h5>Não perde atrito com movimento</h5>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T3.png' %});"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-light">
-				<h1 class="spacetxt">Pode ser lavado varias vezes</h1>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-	    <div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T4.png' %});"
-		>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T5.png' %});"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-light">
-				<h1 class="spacetxt">Magnetismo de alta precisão</h1>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T6.png' %});"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-			  <div class="text-light">
-				<h1 class="spacetxt">Instale em qualquer lugar</h1>
-				<h4>No Carro</h4>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T7.png' %});"
-		>
-		  <div class="mask" style="background-color: rgba(0, 0, 0, 0.0)">
-			<div class="d-flex justify-content-center align-items-center h-100">
-		      <div class="text-dark">
-				<h1 class="spacetxt">E em casa</h1>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-	<div class="container">
-	  <div class="row">
-		<div class="p-5 text-center bg-image col-md-12 imgback"
-		style="background-image: url({% static 'img/T8.png' %});"
-		>
-		</div>
-	  </div>
-	</div>
-
-	<footer class="main-footer mt-5 pt-3">
-	  <div class="container">
-		<div class="row">
-	      <div class="col">
-			<h3>Entre em Contato</h3>
-		 	<address>
-			  +55 54 9 9124 6539
-			  <br/>
-			  <a href="mailto: lucasabreusilva.98@gmail.com">lucasabreusilva.98@gmail.com</a>
-			</address>
-		  </div>
-		</div>
-	  </div>
-	  <div class="rights pt-2 pb-2">
-		<div class="container">
 		  <div class="row">
-			<div class="col">
-			  Tkey Geek &#169 {% now 'Y' %}. Todos direitos reservados.
+			<div class="col-md-4">
+			  <h3 class="text-center">Silicone de alta qualidade</h3>
+			  <img src="{% static 'img/T1.png' %}" class="img-fluid">
+			  <p class="text-muted text-center">Com design competitivo e estiloso, pode ser destacado a qualquer momento.</p>
+		    </div>
+			<div class="col-md-4">
+			  <h3 class="text-center">Seis imãs de Neodímio</h3>
+			  <img src="{% static 'img/T2.png' %}" class="img-fluid">
+			  <p class="text-muted text-center">Colocados intercalados, garante forte magnestismo, mesmo com os maiores atritos.</p>
+		    </div>
+			<div class="col-md-4">
+			  <h3 class="text-center">Impermeável</h3>
+			  <img src="{% static 'img/T3.png' %}" class="img-fluid">
+			  <p class="text-muted text-center">É só lavar e reutilizar.</p>
+		    </div>
+		  </div>
+		</div>
+		</div>
+
+		<div  id="Pricing">
+			<hr>
+		  <div class="container ">
+		  <div class="section-heading text-center">
+			<hr>
+		    <h2>Conheça nossos modelos</h2>
+		    <p class="text-muted">Estamos trabalhando para trazer novidades!</p>
+		  </div>
+		  <div class="row">
+			<div class="col-lg-6">
+			  <h1 class="text-center">T100-B</h1>
+			  <img src="{% static 'img/T100B.jpg' %}" class="img-fluid">
 			</div>
+			<div class="col-lg-6">
+			  <h1 class="text-center">T100-G</h1>
+			  <img src="{% static 'img/T100G.jpg' %}" class="img-fluid">
+			</div>
+		  </div>
+		</div>
+		</div>
+
+		<div id="Install">
+			<hr>
+		  <div class="container">
+		  <div class="section-heading text-center">
+			  <hr>
+			<h2>Fácil de usar, Rápido de instalar</h2>
+			<p class="text-muted">Pode ser instalado no seu celular ou na sua capinha em menos de 1 minuto!</p>
+		  </div>
+		  <div class="row col-lg-12">
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T5-1.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">1. Separe o celular e o adesivo metalizado.</p>
+				</div>
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T5-2.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">2. Destaque o plástico protetor do adesivo metalizado.</p>
+				</div>
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T5-3.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">3. Cole atrás do celular ou da capinha à sua escolha.</p>
+				</div>
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T5-4.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">4. Pronto, agora é só usar!</p>
+				</div>
+			  </div>
+			  <div class="section-heading text-center">
+				<h2>Multifuncional, Adaptável</h2>
+				<p class="text-muted">Você pode colocar em qualquer lugar do seu carro, da sua casa ou escritório!</p>
+				<hr>
+			  </div>
+			  <div class="row">
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T7-1.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">Discreto e super adaptável!</p>
+				</div>
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T7-2.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">Superfície não necessita ser metalizada!</p>
+				</div>
+				<div class="col-lg-3">
+				  <img src="{% static 'img/T7-3.PNG' %}" class="img-fluid">
+				  <p class="text-muted text-center">Não danifica a superfície aplicada!</p>
+				</div>
+				  <div class="col-lg-3">
+					<img src="{% static 'img/T7-4.PNG' %}" class="img-fluid">
+					<p class="text-muted text-center">Mantenha seu celular sempre perto!</p>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+		</div>
+	  </div>
+	</div>
+
+	<div id="Contact">
+	  	  <div class="container-fluid bg">
+			<div class="row">
+		  	  <div class="col-lg-12 my-auto">
+		    	<div class="container-fluid">
+		      	  <div class="row phone-telegram-whats pt-2">
+			    	<div>
+			      	  <img src="{% static 'img/logo_telegram.png' %}">
+				  	  <a href="https://t.me/LucasEduard" target="_blank">@LucasEduard    </a>
+					</div>
+					<div>
+				  	  <img src="{% static 'img/logo_whatsapp.png' %}">
+				  	  <a href="https://wa.me/555499124659" target="_blank">(54) 99124 6539</a>
+					</div>
+				  </div>
+				</div>
+		  	  </div>
+			</div>
+		  </div>
+		</div>
+
+	<footer class="rights pt-2 pb-2">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col text-center text-muted">
+		    Tkey Geek &#169 {% now 'Y' %}. Todos direitos reservados.
 		  </div>
 		</div>
 	  </div>

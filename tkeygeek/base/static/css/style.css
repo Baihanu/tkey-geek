@@ -1,3 +1,19 @@
+.phone-telegram-whats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.bg{
+    background-color: black;
+}
+
+.NavBackground {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: white;
+}
+
 .spacetxt{
     margin-bottom: 1rem !important;
     font-size: 2rem;
@@ -15,10 +31,6 @@
 	height: 600px;
 }
 
-.main-footer{
-    background-color: #E3E0DF;
-}
-
 .rights{
-    background-color: #C0C0C0;
+    background-color: black;
 }
